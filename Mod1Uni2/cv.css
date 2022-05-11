@@ -1,33 +1,48 @@
-
-/*FALTA armar botonera fija con el titulo en h1*/
-h1{
+h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: cadetblue;
 }
 
-h3{
+#fijo {
+    position: fixed;
+    top: 0px;
+    background-color: aliceblue;
+    height: 60px;
+    width: 100%;
+    margin: 0%;
+}
+
+h3 {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: cadetblue;
     background-color: aliceblue;
 }
 
-/* FALTA centrar imagen
-AGREGAR UN HOVER*/
-.image{
+.image {
     align-content: center;
+    margin-top: 60px;
 }
 
-p{
+.box1 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 li {
+    text-align: left;
+}
+
+p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: midnightblue;
     text-align: center;
 }
 
-/*HACER UNA BOX PARA LAS LISTAS*/
-.lists{
+.lists {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: midnightblue;
     text-align: center;
