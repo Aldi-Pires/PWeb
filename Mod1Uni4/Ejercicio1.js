@@ -1,6 +1,6 @@
 var distance;
-var means = ["a pie", "bicicleta", "colectivo", "auto", "avión"]
-var resmess = 'Su medio de transporte es '
+var means = ["a pie", "bicicleta", "colectivo", "auto", "avión"];
+var resmess = 'Su medio de transporte es ';
 
 distance = prompt('Ingrese la distancia en metros', ' ');
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de carácteres</title>
+</head>
+
+<body>
+    <h1>Write your message</h1>
+
+    <script>
+        function countChars(obj) {
+            document.getElementById("charNum").innerHTML = obj.value.length + ' characters';
+
+        }
+
+    </script>
+
+    <textarea id="textarea" name="message" onkeyup="countChars(this);"></textarea>
+    <p id="charNum">0 characters</p>
+
+    <style>
+        #textarea {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+
+</body>
+
+</html>
