@@ -10,11 +10,22 @@ color: white;
 
 p {
     font-family: 'Varela Round', sans-serif;
+    font-size: small;
 }
 
-h1, h2 {
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 400%;
+}
+
+h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: xx-large;
+}
+
+h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
 }
 
 .hero {
@@ -73,4 +84,12 @@ h1, h2 {
 .testimonio {
     text-align: center;
     padding: 50px 20px;
+}
+
+.form-submit {
+    margin-top: 15px;
+}
+
+.carousel-item {
+    height: 200px;
 }
