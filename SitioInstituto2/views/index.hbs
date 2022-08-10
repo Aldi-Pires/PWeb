@@ -60,13 +60,33 @@
       <div class="col-md-5 offset-md-2 py-3">
         <h2>Novedades</h2>
         <ul class="lista-novedades">
-          <li><a href="#"> <img src="images/cooking.jpg">Cooking lesson</a></li>
-          <li><a href="#"> <img src="images/puppets.jpg">Puppet Theatre</a></li>
-          <li><a href="#"> <img src="images/paint.jpg">Art lesson</a></li>
-          <li><a href="#"> <img src="images/Museum trip.jpg">Museum trip</a></li>
-          <li><a href="#"> <img src="images/notebook.jpg"> New Courses</a></li>
+          {{#each novedades}}
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+              <img src="images/notebook.jpg"> {{titulo}} </a>
+          </li>
+          {{/each}}
         </ul>
       </div>
+      {{#each novedades}}
+      {{!-- inicia modal --}}
+      <div class="modal fade" id="modal{{id}}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"> {{titulo}} </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2>{{subtitulo}}</h2>
+              <p>{{body}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
       <!--Cierra Novedades-->
       <!--Arranca Testimonios-->
       <div class="col-md-3">
@@ -107,7 +127,7 @@
         </div>
       </div>
       <!--Cierra Testimonios-->
-    </div>
+    
     <!--Cierran Novedades y Testimonios-->
     <!-- Arranca Instituto -->
     <div id="instituto" class="row align-items-center py-4">

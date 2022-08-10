@@ -1,14 +1,20 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var novedadesModel = require('../models/novedadesModel');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async function (req, res, next) {
+
+  var novedades = await novedadesModel.getNovedades();
+
+  res.render('index', {
+    novedades
+  });
 });
 
 router.post('/', async (req, res, next) => {
-  var nombre= req.body.nombre;
+  var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
   var telefono = req.body.telefono;
@@ -19,7 +25,7 @@ router.post('/', async (req, res, next) => {
   /*console.log(req.body) */
 
   var obj = {
-    to:'ingles.aldana@gmail.com',
+    to: 'ingles.aldana@gmail.com',
     subject: 'Contacto desde el sitio',
     html: nombre + "" + apellido + " se contactó a través del sitio y quiere mas info a este correo: " + email + ". <br> Además, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + telefono
   }
@@ -39,7 +45,7 @@ router.post('/', async (req, res, next) => {
   res.render('index', {
     message: 'Mensaje enviado correctamente',
   });
-  
+
 })
 
 module.exports = router;
