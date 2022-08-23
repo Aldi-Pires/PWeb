@@ -1,0 +1,112 @@
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Varela Round', sans-serif;
+*/
+footer {
+background-color:#414141;
+font-family: 'Cormorant Garamond', serif;
+color: white;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: small;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 400%;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: xx-large;
+}
+
+h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+}
+
+.hero {
+    background: url(/images/blackboard.jpg) no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    color: white;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.testimonios{
+    background-color: #e3e3e3;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.form-submit {
+    margin-top: 15px;
+}
+
+#novedades .carousel-item {
+    height: 200px;
+}
+
+.courseicon {
+    margin-right: 5px; 
+    width: 20px;
+    text-align:center;
+}
+
+.social-media {
+    color: #dadada;
+}
+
+.social-media:hover {
+    color: #212529;
+}
+
+footer p {
+    margin: 0px;
+}
